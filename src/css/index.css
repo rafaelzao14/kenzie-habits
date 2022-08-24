@@ -1,0 +1,159 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-family: 'Inter';
+    background-color: rgba(var(--color-blue),1);
+}
+
+.titulo {
+    color: rgba(var(--color-white),1);
+    font-family: 'Eczar';
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.subtitulo {
+    color: rgba(var(--color-white),1);
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+    font-weight: 600
+}
+
+.formLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+}
+
+
+ @media (min-width: 440px){
+    .titulo {
+        font-size: 3rem
+    }
+
+    .subtitulo {
+        font-size: 1.5rem
+    }
+
+}
+
+
+@media (min-width: 345px){
+    .formLogin .inputForm{
+        width: 16.5rem;
+    }
+
+    .formLogin .btnForm {
+        width: 18.55rem
+    }
+}
+
+
+.formLogin h4{
+    color: #415AF3;
+    font-family: 'Roboto';
+}
+
+.formLogin .inputForm {
+    box-shadow: none;
+    width: 15.5rem;
+    height: 1rem;
+    padding: 1rem;
+    background-color: #F1F3F5;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    outline: none;
+    font-family: 'Roboto';
+}
+
+.formLogin .btnForm{
+    font-family: 'Roboto';
+    width: 17.55rem;
+    padding: 1.5rem;
+    height: 1.5rem;
+    box-shadow: none;
+    background-color: #A0ADF9;
+    border: none;
+    font-size: 15px;
+    border-radius: 4px;
+    color: #F1F3F5;
+    font-weight: 600;
+}
+
+.btnForm:hover{
+    background-color: #a2d2ff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.modal-loginError {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(var(--color-white),1);
+    border-radius: 12px;
+    width: 17rem;
+    height: 35%;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px -5px #000000;
+    font-family: 'Roboto';
+    padding: 0;
+    position: absolute;
+    transition: 155ms;
+    margin-top: -9999px;
+}
+
+.fa-circle-exclamation {
+    color: red;
+    margin: 0;
+    font-size: 2rem;
+}
+
+
+.modal-loginError>button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    width: 8rem;
+    height: 1rem;
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal-loginError>button:hover{
+    opacity: 60%;
+}
+
+.modal-loginError>h2 {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 700
+}
+
+.modal-loginError>p {
+    font-size: 0.8rem;
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+
